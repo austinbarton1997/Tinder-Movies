@@ -1,0 +1,34 @@
+{
+  "name": "movies-app",
+  "version": "1.0.0",
+  "description": "User creates an account and stores data based on swiping yes / no on movies they want to see and compares with their partner. If both them and partner liked a specific movie it would be stored in a seperate area.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Austin Barton",
+  "license": "ISC",
+  "dependencies": {
+    "@thblt-thlgn/omdb": "0.0.3",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "express-session": "^1.17.1",
+    "imdb": "^1.1.0",
+    "imdb-api": "^4.2.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.2.5",
+    "name-to-imdb": "^3.0.1",
+    "node-fetch": "^2.6.1",
+    "omdb": "^0.8.0",
+    "omdbapi": "^3.0.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "sequelize": "^6.3.5",
+    "uuid": "^8.3.0"
+  }
+}

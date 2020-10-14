@@ -1,0 +1,19 @@
+<%- include('partials/header') -%>
+
+<div class="movieContainer">
+    <div class="movies">
+        <img class="movieImage" name="movieIMG" src=<%=movieIMG%> alt="">
+        <a href=https://www.netflix.com/title/<%=movieID%> target="_blank" class="movieTitle"><%=movieTitle%></a>
+    </div>
+    <div class="buttons">
+        <form action="/no" method="post">
+            <button type="submit" class="x-btn btn btn-outline-danger"><i class="fas fa-times"></i></button>
+        </form>
+        <form action="/yes" method="post">
+            <button type="submit" class="heart-btn btn btn-outline-success"><i class="fas fa-heart"></i></button>
+        </form>
+    </div>
+</div>
+</div>
+
+<%- include('partials/footer') -%>

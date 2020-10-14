@@ -1,0 +1,30 @@
+<%- include('partials/header') -%>
+<!-- /.container -->
+<div class="container">
+<<<<<<< HEAD
+    <div class="likedMoviesNav">
+        <h1 class="mh font-weight-light text-center text-lg-left mt-4 mb-0"><a href="/movies"><u>My Movies</u></a> |
+        </h1>
+        <h1 class="mh font-weight-light text-center text-lg-left mt-4 mb-0">| <a href="/ourMovies">Our Movies </a></h1>
+    </div>
+=======
+    <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Your Movies</h1>
+>>>>>>> parent of 10285ef... Async Fixes, Partner Creation, Compare User / Partner Movies
+    <hr class="mt-2 mb-5">
+    <div class="row text-center text-lg-left">
+        <% if (movies < 1) { %>
+        <p>You haven't liked any movies.</p>
+        <% } else { %>
+        <% movies.forEach(function(movie){ %>
+        <div class="col-lg-3 col-md-4 col-6">
+            <a href=https://www.netflix.com/title/<%=movie.movieID%> class="d-block mb-4 h-100">
+                <img class="img-fluid img-thumbnail" src=<%=movie.poster%> alt="">
+            </a>
+        </div>
+        <% }); %>
+        <% } %>
+    </div>
+
+</div>
+<!-- /.container -->
+<%- include('partials/footer') -%>
